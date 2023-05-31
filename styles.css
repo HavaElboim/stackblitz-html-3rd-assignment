@@ -6,6 +6,8 @@
   border-radius: 5%;
   align-content: center;
   padding: 5%;
+  height: calc(100% – 40px);
+  width: calc(100%-10px);
 }
 
 .inner-flexbox {
@@ -20,4 +22,5 @@
 img {
   padding: 1%;
   overflow: scroll;
+  width: calc(48%);
 }
