@@ -27,7 +27,13 @@ img {
 }
 
 .my_img {
-  /*width: calc(48%);*/
+  /*LEAVE THIS IN FOR IDENTIFICATION OF IMAGES TO CHANGE SIZE*/
+}
+
+.my_input {
+  /*LEAVE THIS IN FOR IDENTIFICATION OF INPUT BOXES TO CHANGE SIZE*/
+  width: 30px;
+  height: 20px;
 }
 
 .resize-btn {
@@ -45,6 +51,8 @@ img {
   font-size: small;
   text-align: center;
   margin: 1%;
+}
+.increase {
 }
 
 .btn-flexbox {
