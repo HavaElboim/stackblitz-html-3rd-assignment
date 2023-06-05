@@ -37,6 +37,12 @@ img {
   border-radius: 10%;
 }
 
+.input_url {
+  width: 300px;
+  height: 20px;
+  border-radius: 10%;
+}
+
 .resize-btn {
   /*color: rgb(13, 10, 56);*/
   background: linear-gradient(
