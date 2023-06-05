@@ -7,7 +7,7 @@
   border-radius: 5%;
   align-content: center;
   padding: 5%;
-  height: calc(100% – 40px);
+  height: calc(100%–40px);
   width: calc(100%-10px);
 }
 
@@ -22,7 +22,7 @@
 
 img {
   padding: 1%;
-  overflow: scroll;
+  overflow: clip;
   width: calc(48%);
 }
 
@@ -30,22 +30,23 @@ img {
   /*LEAVE THIS IN FOR IDENTIFICATION OF IMAGES TO CHANGE SIZE*/
 }
 
-.my_input {
+.input_magnification {
   /*LEAVE THIS IN FOR IDENTIFICATION OF INPUT BOXES TO CHANGE SIZE*/
-  width: 30px;
+  width: 23px;
   height: 20px;
+  border-radius: 10%;
 }
 
 .resize-btn {
-  color: rgb(13, 10, 56);
+  /*color: rgb(13, 10, 56);*/
   background: linear-gradient(
     45deg,
-    rgba(9, 221, 203, 0.877) 2.43%,
+    rgba(9, 221, 203, 0.877) 20.43%,
     rgba(167, 162, 118, 0.5) 100%
   );
-  width: 60px;
-  height: 40px;
-  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
   border: 5px;
   border-color: blueviolet;
   font-size: small;
@@ -53,8 +54,29 @@ img {
   margin: 1%;
 }
 .increase {
+  background: url('./images/expand_icon.svg') no-repeat,
+    linear-gradient(
+        45deg,
+        rgba(9, 221, 203, 0.877) 20.43%,
+        rgba(167, 162, 118, 0.5) 100%
+      )
+      no-repeat;
+  background-size: 60%, 100%;
+  background-position: center;
 }
+.decrease {
+  background: url('./images/shrink_icon.svg') no-repeat,
+    linear-gradient(
+        45deg,
+        rgba(9, 221, 203, 0.877) 20.43%,
+        rgba(167, 162, 118, 0.5) 100%
+      )
+      no-repeat;
+  background-size: 60%, 100%;
+  background-position: center;
 
+  background-repeat: no-repeat;
+}
 .btn-flexbox {
   display: flex;
   flex-direction: column;
@@ -65,4 +87,11 @@ img {
   padding-top: 2%;
   height: calc(100% – 40px);
   width: calc(100%-10px);
+}
+
+.warning {
+  font-size: smaller;
+  color: red;
+  margin-top: 2px;
+  display: none;
 }
