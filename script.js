@@ -1,3 +1,6 @@
+// The images are inside a container element:
+var image_container = document.getElementById('image_container');
+
 let image_array = document.getElementsByClassName('my_img');
 console.log(
   'in script, have image ',
@@ -49,4 +52,22 @@ function resize(image_num, direction) {
     ', ',
     image_array[image_num].style.height
   );
+}
+
+function add_image() {
+  // Get the input value
+  var new_url = document.getElementsByClassName('input_url')[0];
+  var image_url = new_url.value;
+
+  // Create a new image element
+  var new_img = document.createElement('img');
+  new_img.src = image_url;
+  new_img.style.width = '200px';
+  new_img.style.height = '200px';
+
+  // Add the image URL to the image container
+  image_container.appendChild(new_img);
+
+  // Clear the input field
+  new_url.value = '';
 }

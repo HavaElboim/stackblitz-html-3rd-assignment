@@ -11,10 +11,24 @@
       src="https://carbyne-resources-dev.carbynenet-dev.com/images/carbyne-connect/company-icons/Carbyne.png"
       alt="Carbyne logo"
     />
+
     <div class="outer-flexbox">
-      <input class="input_url" type="url" placeholder="Enter URL of another image here"/>
-      <button></button>
-      <div class="inner-flexbox">
+      <div class="btn-flexbox narrative">
+        <p>You can upload another image.</p>
+        <p>For example:</p>
+        <p>
+          https://carbyne.com/wp-content/uploads/2022/01/shutterstock_240998203-scaled.jpg
+        </p>
+        <p></p>
+        <p>https://carbyne.com/wp-content/uploads/2022/07/BD-to-site.png</p>
+      </div>
+      <input
+        class="input_url"
+        type="url"
+        placeholder="Enter URL of another image here"
+      />
+      <button class="resize-btn upload" onclick="add_image()"></button>
+      <div id="image_container">
         <div class="btn-flexbox">
           <img
             class="my_img"
