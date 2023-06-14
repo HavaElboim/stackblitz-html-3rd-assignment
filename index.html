@@ -13,94 +13,100 @@
     />
 
     <div class="outer-flexbox">
-      <div class="btn-flexbox narrative">
-        <p>You can upload another image.</p>
-        <p>For example:</p>
-        <p>
-          https://carbyne.com/wp-content/uploads/2022/01/shutterstock_240998203-scaled.jpg
-        </p>
-        <p></p>
-        <p>https://carbyne.com/wp-content/uploads/2022/07/BD-to-site.png</p>
+      <div class="mid-flexbox">
+        <div class="btn-flexbox narrative">
+          <p>
+            Click on a image's increase or decrease button. You can enter a new
+            magnification scale value for each image.
+          </p>
+          <br />
+          <p>You can also upload another image.</p>
+          <p>For example:</p>
+          <p>
+            https://carbyne.com/wp-content/uploads/2022/01/shutterstock_240998203-scaled.jpg
+          </p>
+          <p></p>
+          <p>https://carbyne.com/wp-content/uploads/2022/07/BD-to-site.png</p>
+          <p>
+            https://carbyne.com/wp-content/uploads/2022/01/Vertical-Screens.png
+          </p>
+          <p>https://carbyne.com/wp-content/uploads/2022/07/594829253-1.png</p>
+          <div class="inner-flexbox">
+            <input
+              class="input_url"
+              type="url"
+              placeholder="Enter URL of another image here"
+            />
+            <button class="resize-btn upload" onclick="add_image()"></button>
+          </div>
+        </div>
       </div>
-      <input
-        class="input_url"
-        type="url"
-        placeholder="Enter URL of another image here"
-      />
-      <button class="resize-btn upload" onclick="add_image()"></button>
-      <div id="image_container">
-        <div class="btn-flexbox">
+      <div class="mid-flexbox">
+        <div id="image_container" class="inner-flexbox">
+          <div class="btn-flexbox">
+            <img
+              class="my_img"
+              src="https://carbyne.com/wp-content/uploads/2023/05/shutterstock_1762509854-1.png"
+              alt="PSAPs attached to the cloud"
+            />
+            <p class="warning">Magnification too big</p>
+          </div>
+          <div class="btn-flexbox">
+            <button
+              class="resize-btn increase"
+              onclick="resize(0,'increase')"
+            ></button>
+            <button
+              class="resize-btn decrease"
+              onclick="resize(0,'shrink')"
+            ></button>
+            <input class="input_magnification" type="float" />
+          </div>
+        </div>
+        <div class="inner-flexbox">
           <img
             class="my_img"
-            src="https://carbyne.com/wp-content/uploads/2023/05/shutterstock_1762509854-1.png"
-            alt="PSAPs attached to the cloud"
+            src="https://carbyne.com/wp-content/uploads/2023/05/TylerTech-PR.png"
+            alt="Helicopter arriving at accident scene"
           />
-          <p class="warning">Magnification too big</p>
+          <div class="btn-flexbox">
+            <button
+              class="resize-btn increase"
+              onclick="resize(1,'increase')"
+            ></button>
+            <button class="resize-btn decrease" onclick="resize(1)"></button>
+            <input class="input_magnification" type="float" />
+          </div>
         </div>
-        <div class="btn-flexbox">
-          <button
-            class="resize-btn increase"
-            onclick="resize(0,'grow')"
-          ></button>
-          <button
-            class="resize-btn decrease"
-            onclick="resize(0,'shrink')"
-          ></button>
-          <input class="input_magnification" type="float" />
+        <div class="inner-flexbox">
+          <img
+            class="my_img"
+            src="https://carbyne.com/wp-content/uploads/2023/03/Allied-Press-1.png"
+            alt="Policewoman call taker"
+          />
+          <div class="btn-flexbox">
+            <button
+              class="resize-btn increase"
+              onclick="resize(2,'increase')"
+            ></button>
+            <button class="resize-btn decrease" onclick="resize(2)"></button>
+            <input class="input_magnification" type="float" />
+          </div>
         </div>
-      </div>
-      <div class="inner-flexbox">
-        <img
-          class="my_img"
-          src="https://carbyne.com/wp-content/uploads/2023/05/TylerTech-PR.png"
-          alt="Helicopter arriving at accident scene"
-        />
-        <div class="btn-flexbox">
-          <button
-            class="resize-btn increase"
-            onclick="resize(1,'grow')"
-          ></button>
-          <button
-            class="resize-btn decrease"
-            onclick="resize(1,'shrink')"
-          ></button>
-          <input class="input_magnification" type="float" />
-        </div>
-      </div>
-      <div class="inner-flexbox">
-        <img
-          class="my_img"
-          src="https://carbyne.com/wp-content/uploads/2023/03/Allied-Press-1.png"
-          alt="Policewoman call taker"
-        />
-        <div class="btn-flexbox">
-          <button
-            class="resize-btn increase"
-            onclick="resize(2,'grow')"
-          ></button>
-          <button
-            class="resize-btn decrease"
-            onclick="resize(2,'shrink')"
-          ></button>
-          <input class="input_magnification" type="float" />
-        </div>
-      </div>
-      <div class="inner-flexbox">
-        <img
-          class="my_img"
-          src="https://carbyne.com/wp-content/uploads/2023/04/Translation-3.png"
-          alt="APEX platform with call transcription"
-        />
-        <div class="btn-flexbox">
-          <button
-            class="resize-btn increase"
-            onclick="resize(3,'grow')"
-          ></button>
-          <button
-            class="resize-btn decrease"
-            onclick="resize(3,'shrink')"
-          ></button>
-          <input class="input_magnification" type="float" />
+        <div class="inner-flexbox">
+          <img
+            class="my_img"
+            src="https://carbyne.com/wp-content/uploads/2023/04/Translation-3.png"
+            alt="APEX platform with call transcription"
+          />
+          <div class="btn-flexbox">
+            <button
+              class="resize-btn increase"
+              onclick="resize(3,'increase')"
+            ></button>
+            <button class="resize-btn decrease" onclick="resize(3)"></button>
+            <input class="input_magnification" type="float" />
+          </div>
         </div>
       </div>
     </div>
